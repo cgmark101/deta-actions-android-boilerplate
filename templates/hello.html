@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ tittle }}</title>
+</head>
+
+<body>
+    <h1>Hola Mundo</h1>
+    <p style="font-weight: bold">Base de datos Akane-contact</p>
+    <table style="width:80%">
+        <tr>
+            <th>email</th>
+            <th>fecha</th>
+            <th>hora</th>
+            <th>key</th>
+            <th>mensaje</th>
+            <th>nombre</th>
+        </tr>
+        {% for items in resultado %}
+        <tr>
+            <td>{{ items.email }}</td>
+            <td>{{ items.fecha }}</td>
+            <td>{{ items.hora }}</td>
+            <td>{{ items.key }}</td>
+            <td>{{ items.mensaje }}</td>
+            <td>{{ items.nombre }}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+</body>
+
+</html>

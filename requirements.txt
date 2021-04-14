@@ -1,0 +1,5 @@
+fastapi
+deta
+uvicorn
+jinja2
+aiofiles
